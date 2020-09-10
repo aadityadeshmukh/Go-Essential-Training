@@ -2,7 +2,7 @@ package main
 import(
 	"fmt"
 )
-func main()  {
+func main()  { //cannot redeclare main function for go files in the same directory
 	
 	// var a float64 //type assignment comes after the declaration
 	// var b float64 //if no value is assigned it is defaulted as 0
