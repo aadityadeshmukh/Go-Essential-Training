@@ -31,7 +31,7 @@ func main(){
 		if(b > 4){
 			break
 		}
-		fmt.Printf("a is %v\n", a)
+		fmt.Printf("b is %v\n", b)
 		b++
 	}
 
