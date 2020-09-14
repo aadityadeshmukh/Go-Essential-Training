@@ -27,6 +27,6 @@ func main(){
 		fmt.Printf(" \n")
 	}
 
-	looney = append(looney, "traz")
+	looney = append(looney, "elmer")
 	fmt.Printf("Looneys = %v of the type %T\n" , looney, looney)
 }
