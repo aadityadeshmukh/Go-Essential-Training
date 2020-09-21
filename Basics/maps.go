@@ -24,4 +24,12 @@ func main(){
 	}else{
 		fmt.Println(value)
 	}
+
+	for key := range stocks{
+		fmt.Println(key)
+	}
+
+	for key, value := range stocks{
+		fmt.Printf("%s --> %f\n", key, value)
+	}
 }
