@@ -13,8 +13,10 @@ func main(){
 	fmt.Println(stocks)
 	fmt.Println(len (stocks))
 	fmt.Println(stocks["AMZN"])
-
+	stocks["TSLA"] = 420.69
 	fmt.Println(stocks["TSLA"])
+	delete(stocks, "MSFT")
+	fmt.Println(stocks)
 
 	value, ok := stocks["GOOG"]
 	if !ok {
