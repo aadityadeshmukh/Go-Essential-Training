@@ -13,6 +13,7 @@ func main(){
 	fmt.Println(stocks)
 	fmt.Println(len (stocks))
 	fmt.Println(stocks["AMZN"])
+
 	fmt.Println(stocks["TSLA"])
 
 	value, ok := stocks["GOOG"]
