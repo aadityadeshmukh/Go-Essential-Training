@@ -15,8 +15,8 @@ func doubleAt(a[]int, i int) {
 	a[i] *= 2
 }
 
-func double(i int){
-	i *= 2
+func double(i *int){
+	*i *= 2
 }
 
 func main(){
@@ -32,7 +32,7 @@ func main(){
 	fmt.Println(values)
 
 	num := 4
-	double(num)
+	double(&num)
 	fmt.Println(num)
 
 }
