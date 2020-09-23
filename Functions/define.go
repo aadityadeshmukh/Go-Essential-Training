@@ -29,6 +29,10 @@ func sqrt( inp float64) (float64, error){
 	return math.Sqrt(inp), nil
 }
 
+func cleanup (inp string){
+	fmt.Printf("Cleaning up %s\n", inp)
+}
+
 func main(){
 	val := add(7,10)
 	fmt.Println(val)
@@ -58,4 +62,9 @@ func main(){
 	}else{
 		fmt.Println(result)
 	}
+
+	defer cleanup("A")
+	defer cleanup("B")
+
+	fmt.Println("Worker")
 }
