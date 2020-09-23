@@ -1,6 +1,7 @@
 package main 
 import(
 	"fmt"
+	"math"
 )
 
 func add(a int, b int) int{
@@ -19,6 +20,15 @@ func double(i *int){
 	*i *= 2
 }
 
+//Error handling
+func sqrt( inp float64) (float64, error){
+	if inp < 0 {
+		return 0.0, fmt.Errorf("Cannot square root a negative number.\n")
+	}
+
+	return math.Sqrt(inp), nil
+}
+
 func main(){
 	val := add(7,10)
 	fmt.Println(val)
@@ -35,4 +45,17 @@ func main(){
 	double(&num)
 	fmt.Println(num)
 
+	result, err := sqrt(3.0)
+	if err != nil{
+		fmt.Println(err)
+	}else{
+		fmt.Println(result)
+	}
+
+	result, err = sqrt(-2.0)
+	if err != nil{
+		fmt.Println(err)
+	}else{
+		fmt.Println(result)
+	}
 }
