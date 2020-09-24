@@ -16,4 +16,7 @@ func main(){
 
 	t1 := Trade{Symbol: "APPL", Volume: 30, Price: 2000.3, Buy: false}
 	fmt.Println(t1)
+
+	t2 := Trade{}
+	fmt.Println(t2)
 }
